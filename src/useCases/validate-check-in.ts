@@ -15,7 +15,6 @@ export class ValidateCheckInUseCase {
     const distanceInMinutes =
       (Date.now() - checkIn.created_at.getTime()) / 1000 / 60
 
-    console.log(distanceInMinutes)
     const maxMinutesToValidateCheckIn = env.MAX_MINUTES_TO_VALIDATE_CHECK_IN
 
     if (distanceInMinutes > maxMinutesToValidateCheckIn) {
