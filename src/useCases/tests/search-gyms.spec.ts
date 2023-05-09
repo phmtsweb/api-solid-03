@@ -22,7 +22,11 @@ describe('Fecth users check ins Use Case', () => {
       })
     }
 
-    const gyms = await sut.execute('2')
+    const gyms = await sut.execute({
+      query: '2',
+      page: 1,
+      offset: 10,
+    })
 
     expect(gyms).toEqual(expect.any(Array))
     expect(gyms).toHaveLength(5)

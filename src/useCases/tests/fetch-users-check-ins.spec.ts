@@ -6,7 +6,7 @@ import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-c
 import { ResourceNotFoundError } from '../errors/resource-not-found-error'
 import { env } from '@/env'
 
-describe('Fecth users check ins Use Case', () => {
+describe('Fetch users check ins Use Case', () => {
   let sut: FecthUsersCheckInsHistory
   let usersRepository: InMemoryUsersRepository
   let checkInsRepository: InMemoryCheckInsRepository
